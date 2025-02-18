@@ -1,0 +1,13 @@
+server {
+        listen 8181;
+        server_name _;
+        location = /metrics {
+                root /var/www/metrics;
+                index metrics;
+                types { }
+                default_type text/plain;
+        }
+        location / {
+                return 404;
+        }
+}

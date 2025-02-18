@@ -1,0 +1,6 @@
+- Download grafana from official site https://grafana.com/grafana/download
+- `sudo apt-get install -y adduser libfontconfig1 musl`
+- `wget https://dl.grafana.com/oss/release/grafana_10.2.3_amd64.deb`
+- `sudo dpkg -i grafana_10.2.3_amd64.deb`
+- Download prometheus with `sudo apt install prometheus`
+- Run grafana `sudo systemctl start grafana-server`
